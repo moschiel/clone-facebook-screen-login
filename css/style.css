@@ -10,17 +10,127 @@ html,body{
   background-color: red; /* for debug */
 }
 
+/****** SECTION *******/
 section{
   background-color: #F0F2F5;
   width: 100%;
-  height: 100%;
+  height: 80%;
+  position: relative;
 }
 
-section img{
+/******** WELCOME *********/
+.welcome{
+  background-color: green; /* for debug*/
+  /*display: inline-block;*/
+  width: fit-content;
+  position: absolute;
+  top: 175px;
+  left: 155px;
+}
+.welcome img{
+  background-color: yellow; /* for debug*/
   width: 300px;
-  height: 106px;
+}
+.welcome p{
+  background-color: pink; /* for debug*/
+  font-size: 28px;
+  width: 400px;
+  margin-left: 30px;
+  margin-top: -15px;
 }
 
-section p{
-  font-size: large;
+/******** LOGIN FORM *********/
+.login{
+  background-color: teal; /* for debug*/
+  /*display: inline-block;*/
+  width: fit-content;
+  position: absolute;
+  right: 0px;
+}
+.login form{
+  background-color: white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/******** FORM INPUTS ********/
+.login input, .login button[type=submit]{
+  width: 330px;
+  border-radius: 6px;
+  outline: none;
+  margin-bottom: 10px;
+}
+.login input{
+  font-size: 17px;
+  padding: 14px 16px;
+  border: 1px solid #DDDFE2;
+}
+.login button[type=submit]{
+  border: none;
+  background-color: #1877F2;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 12px 12px;
+  cursor: pointer;
+}
+.login input:focus{
+  border: 1px solid #1877F2;
+}
+.login input::-webkit-input-placeholder{
+ color: #9A9EA5;
+}
+.login input::-moz-placeholder{
+ color: #9A9EA5;
+}
+.login input::-ms-input-placeholder{
+ color: #9A9EA5;
+}
+.login input:focus::-webkit-input-placeholder{
+  color: #C2C7CC;
+}
+.login input:focus::-moz-placeholder{
+  color: #C2C7CC;
+}
+.login input:focus::-ms-input-placeholder{
+  color: #C2C7CC;
+}
+.login button[type=submit]:hover{
+  background-color: #166FE5;
+}
+
+/****** RECOVER *******/
+.recover{
+  /*background-color: yellow;*/ /*for debug */
+  width: 100%;
+  text-align: center;
+}
+.recover a{
+  color: #3387F4;
+  text-decoration: none;
+}
+.recover a:hover{
+  text-decoration: underline;
+}
+
+/******* DIV-LINE *******/
+.div-line{
+  width: 100%;
+  border-top: 1px solid #DADDE1;
+  margin: 18px auto;
+}
+
+/***** NEW ACCOUNT BUTTON ****/
+.new-account{
+  width: 100%;
+  text-align: center;
+}
+.new-account button{
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background-color: #42B72A;
+  color: white;
+  font-weight: bold;
 }
