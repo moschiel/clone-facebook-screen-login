@@ -1,7 +1,8 @@
 # clone-facebook-screen-login
 Reproduction of Facebook login screen using HTML/CSS
+OBS:The original facebook login screen is not responsive, but for this clone we made with a responsive design. 
 
-![](./design-landing-page.png)
+![](./clone-facebook-result.png)
 
 ### Utility:
 - Pratice responsive design using HTML and CSS

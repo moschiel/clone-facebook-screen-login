@@ -7,8 +7,9 @@
 
 html,body{
   height: 100%;
-  background-color: red; /* for debug */
+  /* background-color: red; */ /* for debug */
   font-family: sans-serif;
+  min-width: 300px; /* facebook logo width*/
 }
 
 /****** SECTION *******/
@@ -21,15 +22,16 @@ section{
 
 /******** WELCOME *********/
 .welcome{
-  /* background-color: green;  *//* for debug*/
+  /* background-color: green; */  /* for debug*/
   /*display: inline-block;*/
   width: fit-content;
   position: absolute;
   top: 175px;
-  left: 155px;
+  /* left: 155px; */
+  left: 11%;
 }
 .welcome img{
-  /* background-color: yellow; */ /* for debug*/
+  /* background-color: yellow; */  /* for debug*/
   width: 300px;
 }
 .welcome p{
@@ -46,8 +48,9 @@ section{
   /*display: inline-block;*/
   width: fit-content;
   position: absolute;
-  right: 200px;
   top: 140px;
+  /* right: 200px; */
+  right: 12%;
 }
 .login form{
   background-color: white;
@@ -173,6 +176,7 @@ section{
 /***** FOOTER *****/
 footer{
   background-color: white;
+  width: 100%;
   /* height: 156px; */
   text-align: center;
   padding: 25px 190px;
@@ -220,3 +224,51 @@ footer a:hover{
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1150px){
+  .welcome{
+    left: 2%;
+  }
+  .login{
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 910px){
+  section{
+    position: static;
+    text-align: center;
+    height: auto;
+  }
+  .welcome{
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+  .welcome p{
+    width: 100%;
+    margin-left: 0px;
+    padding: 0% 15%;
+  }
+  
+  .login{
+    position: static;
+    width: 100%;
+    text-align: center;
+    /* padding: 20px; */
+    padding:  20px 20%
+  }
+  .login form{
+    display: inline-block;
+    width: 100%;
+  }
+
+  footer{
+    padding: 25px 10%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .login{
+    padding: 20px;
+  }
+}
