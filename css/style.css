@@ -8,19 +8,20 @@
 html,body{
   height: 100%;
   background-color: red; /* for debug */
+  font-family: sans-serif;
 }
 
 /****** SECTION *******/
 section{
   background-color: #F0F2F5;
   width: 100%;
-  height: 80%;
+  height: 720px;
   position: relative;
 }
 
 /******** WELCOME *********/
 .welcome{
-  background-color: green; /* for debug*/
+  /* background-color: green;  *//* for debug*/
   /*display: inline-block;*/
   width: fit-content;
   position: absolute;
@@ -28,38 +29,42 @@ section{
   left: 155px;
 }
 .welcome img{
-  background-color: yellow; /* for debug*/
+  /* background-color: yellow; */ /* for debug*/
   width: 300px;
 }
 .welcome p{
-  background-color: pink; /* for debug*/
+  /* background-color: pink; */ /* for debug*/
   font-size: 28px;
-  width: 400px;
+  width: 450px;
   margin-left: 30px;
   margin-top: -15px;
 }
 
 /******** LOGIN FORM *********/
 .login{
-  background-color: teal; /* for debug*/
+  /* background-color: teal; */ /* for debug*/
   /*display: inline-block;*/
   width: fit-content;
   position: absolute;
-  right: 0px;
+  right: 200px;
+  top: 140px;
 }
 .login form{
   background-color: white;
-  width: fit-content;
-  padding: 10px;
+  /* width: fit-content; */
+  width: 396px;
+  padding: 15px;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1), 0 8px 16px rgba(0,0,0,.1);
 }
 
-/******** FORM INPUTS ********/
+/******** FORM > INPUTS ********/
 .login input, .login button[type=submit]{
-  width: 330px;
+  /* width: 330px; */
+  width: 100%;
   border-radius: 6px;
   outline: none;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .login input{
   font-size: 17px;
@@ -100,37 +105,118 @@ section{
   background-color: #166FE5;
 }
 
-/****** RECOVER *******/
+/****** FORM > RECOVER *******/
 .recover{
   /*background-color: yellow;*/ /*for debug */
   width: 100%;
   text-align: center;
+  margin-top: 2px;
 }
 .recover a{
   color: #3387F4;
   text-decoration: none;
+  font-size: 14px;
+  
 }
 .recover a:hover{
   text-decoration: underline;
 }
 
-/******* DIV-LINE *******/
+/******* FORM > DIV-LINE *******/
 .div-line{
   width: 100%;
   border-top: 1px solid #DADDE1;
-  margin: 18px auto;
+  margin: 19px auto;
 }
 
-/***** NEW ACCOUNT BUTTON ****/
+/***** FORM > NEW ACCOUNT BUTTON ****/
 .new-account{
   width: 100%;
   text-align: center;
 }
 .new-account button{
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 15px;
   border-radius: 6px;
+  padding: 12px 12px;
+  font-size: 17px;
   outline: none;
   border: none;
   background-color: #42B72A;
   color: white;
   font-weight: bold;
 }
+.new-account button:hover{
+  background-color: #36A420;
+}
+
+/****** .LOGIN > CREATE PAGE TEXT *****/
+.create-page{
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.create-page a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.create-page a:hover{
+  text-decoration: underline;
+}
+.create-page p{
+  display: inline-block;
+}
+
+/***** FOOTER *****/
+footer{
+  background-color: white;
+  /* height: 156px; */
+  text-align: center;
+  padding: 25px 190px;
+  
+}
+.footer-container{
+  text-align: left;
+}
+footer a{
+  color: #8A8D91;
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: 12px;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+/***** FOOTER > LANGUAGES *****/
+.languages button{
+  width: 30px;
+  height: 20px;
+  line-height: 10px;
+  vertical-align: middle;
+  font-size: 22px;
+  color: #6A7180;
+  /* font-weight: bold; */
+  background-color: #F5F6F7;
+  border: 1px solid #CCD0D5;
+}
+.languages button:hover{
+  background-color: #E5E6E7;
+}
+
+/******* FOOTER > DIV-LINE 2 *******/
+.div-line2{
+  width: 100%;
+  border-top: 1px solid #DADDE1;
+  margin: 8px auto;
+}
+
+/****** COPY RIGHT ******/
+.copyright{
+  font-size: 11px;
+  color: #737373;
+  margin-top: 20px;
+}
+
