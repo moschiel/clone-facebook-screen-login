@@ -18,7 +18,7 @@ Reproduction of Facebook login screen using HTML/CSS
 - Open file <b>index.html</b> in any browser you like ( Ex: Chrome, Firefox... )
 
 ### Responsive Mode
-For testing responsitivity, resize your browser windows as you like.
+For testing responsivity, resize your browser windows as you like.
 
 ### Images Source
 - [Facebook](https://www.facebook.com/)
